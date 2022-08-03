@@ -5,21 +5,23 @@ import Home from './pages/home/Home'
 import Courses from './pages/courses/Courses'
 import Contact from './pages/contact/Contact'
 import About from './pages/about/About'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Service from './pages/services/Service'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
     <div>
+      <BrowserRouter>
       <Header />
-      <Router>
         <Routes>
-          <Route exact path='/' element={<Home/>} />
-          <Route exact path='/about' element={<About/>} />
-          <Route exact path='/courses' element={<Courses/>} />
-          <Route exact path='/contact' element={<Contact/>} />
+          <Route path="/" element={<Home/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/courses' element={<Courses/>} />
+          <Route path='/contact' element={<Contact/>} />
+          <Route path='/services' element={<Service/>} />
         </Routes>
-      </Router>
-      <Footer />
+        <Footer />
+      </BrowserRouter>
     </div>
   )
 }

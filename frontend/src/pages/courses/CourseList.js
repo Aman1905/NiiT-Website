@@ -1,0 +1,136 @@
+const CourseList = [
+    {
+        id: 1, 
+        img: "#",
+        title: "Java Programming",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 2, 
+        img: "#",
+        title: "Full Stack Web Development",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 3, 
+        img: "#",
+        title: "Basic Python Programming",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 4, 
+        img: "#",
+        title: "Python with Artificial Intelligence",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 5, 
+        img: "#",
+        title: "Python with Machine Learning",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 6, 
+        img: "#",
+        title: "Python with Data Science",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 7, 
+        img: "#",
+        title: "Advanced AI & ML",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 8, 
+        img: "#",
+        title: "Android App Development",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 9, 
+        img: "#",
+        title: "Game Development",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 10, 
+        img: "#",
+        title: "Introduction to C Programming",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 11, 
+        img: "#",
+        title: "Data Structure and Algorithm",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 12, 
+        img: "#",
+        title: "Information Security (Ethical Hacking)",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 13, 
+        img: "#",
+        title: "Advanced Ethical Hacking",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 14, 
+        img: "#",
+        title: "Cyber Security",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 15, 
+        img: "#",
+        title: "IoT (Internet of Things)",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 16, 
+        img: "#",
+        title: "AutoCad",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 17, 
+        img: "#",
+        title: "Catia",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 18, 
+        img: "#",
+        title: "Solid Works",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 19, 
+        img: "#",
+        title: "Ansys",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 20, 
+        img: "#",
+        title: "PLC with HMI",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 21, 
+        img: "#",
+        title: "Advanced Communication",
+        desc: "Data Structures and Algorithms using Java",
+    },
+    {
+        id: 22, 
+        img: "#",
+        title: "Business Analytics",
+        desc: "Data Structures and Algorithms using Java",
+    },
+];
+
+export default CourseList

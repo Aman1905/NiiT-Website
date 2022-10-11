@@ -1,6 +1,6 @@
 .card {
     width: 20rem;
-    /* height: 28rem; */
+    min-height: 30rem;
     border-radius: 2rem;
     margin-bottom: 2rem;
     box-shadow: 3px 5px 8px 0.7px rgba(0, 0, 0, 0.253);
@@ -42,7 +42,7 @@
 .card-img-top {
     width: 18rem;
     padding: 0.35rem;
-    /* border-radius: 2rem 1.8rem 0 0; */
+    border-radius: 2rem 1.8rem;
 }
 
 .card-btn {
@@ -54,17 +54,133 @@
     color: #fff;
 }
 
-@media (max-width: 280px) {
+
+@media (max-width: 320px) {
     .card {
-        max-width: 15rem;
-        justify-content: center;
-        align-items: center;
+        width: 16rem;
+    }
+
+    .parent__card .row {
+        padding: 1rem;
+    }
+    
+    .card-img-top {
+        width: 14.5rem;
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 375px) {
+    .parent__card .row {
+        padding: 0.8rem;
+    }
+}
+
+@media (width: 425px) {
     .card {
-        justify-content: center;
-        align-items: center;
+        width: 20rem;
+    }
+    
+    .card-body {
+        padding: 3rem 0;
+    }
+    
+    .card-title {
+        color: var(--color-text);
+    }
+    
+    .card-price {
+        font-size: 1.6rem;
+    }
+    
+    .parent__card .row {
+        padding: 2.5rem;
+    }
+}
+
+@media (width: 768px) {
+    .card {
+        width: 12rem;
+        min-height: 28rem;
+    }
+
+    .card-title {
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .card-text {
+        font-size: 0.7rem;
+        padding: 0.5rem 2rem;
+    }
+    
+    .card-price {
+        font-size: 1.42rem;
+        padding: 0.3rem 2rem;
+    }
+    
+    .parent__card .row {
+        padding: 4rem;
+    }
+    
+    .card-img-top {
+        width: 11rem;
+    }
+}
+
+@media (width: 820px) {
+    .card {
+        width: 12rem;
+        min-height: 28rem;
+    }
+
+    .card-title {
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .card-text {
+        font-size: 0.7rem;
+        padding: 0.5rem 2rem;
+    }
+    
+    .card-price {
+        font-size: 1.42rem;
+        padding: 0.3rem 2rem;
+    }
+    
+    .parent__card .row {
+        padding: 4rem;
+    }
+    
+    .card-img-top {
+        width: 11rem;
+    }
+}
+
+@media (width: 1024px) {
+    .card {
+        width: 15rem;
+    }
+
+    .card-title {
+        font-size: x-large;
+    }
+    
+    .card-text {
+        font-size: 0.7rem;
+        padding: 0.5rem 2rem;
+    }
+    
+    .card-price {
+        font-size: 1.42rem;
+        padding: 0.3rem 2rem;
+    }
+    
+    .parent__card .row {
+        padding: 4rem;
+    }
+    
+    .card-img-top {
+        width: 14rem;
     }
 }

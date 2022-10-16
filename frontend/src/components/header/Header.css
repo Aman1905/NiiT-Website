@@ -1,20 +1,21 @@
-.navbar-brand {
+.navbar__brand {
     font-size: 2.5rem !important;
-    color: var(--color-text) !important;
+    color: var(--color-subtext) !important;
 }
 
-.navbar a {
+.navbar-nav a {
     font-size: 1.3rem;
     text-transform: capitalize;
+    /* color: var(--color-subtext) !important; */
+    color: #fff !important;
 }
-
-/* .menu_active {
-    font-weight: bold;
-    border-bottom: 1px solid var(--color-text);
-} */
 
 .navbar a:hover {
     color: var(--color-subtext) !important;
+}
+
+.navbar-collapse {
+    color: #ffffff !important;
 }
 
 @media (max-width: 991px) {

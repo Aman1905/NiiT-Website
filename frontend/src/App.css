@@ -6,7 +6,8 @@
 }
 
 body {
-  background: var(--color-bg);
+  /* background: #F8F8F8; */
+  background: var(--gradient-text);
 }
 
 a {

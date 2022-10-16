@@ -1,3 +1,10 @@
+.page__title {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
 .card {
     width: 20rem;
     min-height: 30rem;

@@ -3,13 +3,13 @@ const CourseList = [
         id: 1, 
         img: "../images/java.png",
         title: "Java Programming",
-        desc: "Master the complete Data Structures and Algorithms, and other Java concepts",
+        desc: "Complete Data Structures and Algorithms, and other Java concepts",
     },
     {
         id: 2, 
         img: "../images/wd.png",
         title: "Full Stack Web Development",
-        desc: "Full Stack Web Development - HTML5, CSS3, JS, PHP, MySQL",
+        desc: "HTML5, CSS3, JS, PHP, MySQL",
     },
     {
         id: 3, 
@@ -21,7 +21,7 @@ const CourseList = [
         id: 4, 
         img: "../images/AI.png",
         title: "Python with Artificial Intelligence",
-        desc: "Master the skills of Artificial Intelligence using Python from A to Z",
+        desc: "Artificial Intelligence using Python from A to Z",
     },
     {
         id: 5, 

@@ -5,7 +5,7 @@ function ServiceCard (props) {
   return (
     <>
         <div className="service-block4 h-100">
-            <div className="service-icon"><i className="icon-tools"></i></div>
+            <div className="service-icon"><i className="fas fa-icon-tools"></i></div>
             <div className="service-desc">
                 <h4>{props.title}</h4>
                 <p>{props.desc}</p>

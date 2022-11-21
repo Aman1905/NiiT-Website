@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Contact.css'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_g414zzo', 'template_5wk620c', form.current, 'I5CFkbgSfyjWJU2G9')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent")
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <>
       <div className='contact__us'>
@@ -13,32 +28,32 @@ const Contact = () => {
         {/* Form */}
           <div className='contact form'>
             <h3>Send a Message!</h3>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="formBox">
                 <div className="row50">
                   <div className='inputBox'>
                     <span>First Name</span>
-                    <input type="text" placeholder="Aman" />
+                    <input type="text" placeholder="Aman" name="user_name" />
                   </div>
                   <div className='inputBox'>
                     <span>Last Name</span>
-                    <input type="text" placeholder="Chopra" />
+                    <input type="text" placeholder="Chopra" name="user_surname" />
                   </div>
                 </div>
                 <div className='row50'>
                   <div className='inputBox'>
                     <span>Email Address</span>
-                    <input type="text" placeholder="amanchopra@gmail.com" />
+                    <input type="text" placeholder="amanchopra@gmail.com" name='user_email' />
                   </div>
                   <div className='inputBox'>
                     <span>Mobile</span>
-                    <input type="text" placeholder="+91 9876543210" />
+                    <input type="text" placeholder="+91 9876543210" name="user_phone"/>
                   </div>
                 </div>
                 <div className='row100'>
                   <div className='inputBox'>
                     <span>Message</span>
-                    <textarea placeholder="Write your message here..."></textarea>
+                    <textarea placeholder="Write your message here..." name='message'></textarea>
                   </div>
                 </div>
                 <div className='row100'>
@@ -77,7 +92,7 @@ const Contact = () => {
 
           {/* Map */}
           <div className='contact map'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.275750592555!2d88.42881601732272!3d22.568787698368443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275ac4c4ff7a7%3A0x356ef393349e47e3!2sNational%20Institute%20for%20Industrial%20Training!5e0!3m2!1sen!2sin!4v1667153529200!5m2!1sen!2sin" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.275750592555!2d88.42881601732272!3d22.568787698368443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275ac4c4ff7a7%3A0x356ef393349e47e3!2sNational%20Institute%20for%20Industrial%20Training!5e0!3m2!1sen!2sin!4v1667153529200!5m2!1sen!2sin" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="location"></iframe>
           </div>
         </div>
       </div>

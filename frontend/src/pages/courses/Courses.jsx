@@ -1,6 +1,6 @@
 import React from 'react'
 import CourseList from './CourseList'
-import Card from './Card'
+import CourseCard from './CourseCard'
 import './Courses.css'
 
 const Courses = () => {
@@ -12,7 +12,7 @@ const Courses = () => {
           {CourseList.map((data) => {
             return(
               <div className='col-md-4' key={data.id}>
-                <Card
+                <CourseCard
                   img={data.img}
                   title={data.title}
                   desc={data.desc}

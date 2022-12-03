@@ -2,8 +2,10 @@ import React from 'react'
 import './Home.css'
 import home from '../../assets/home.png'
 import { NavLink } from 'react-router-dom'
-import About from '../about/About'
-
+import About from './about/About'
+// import Partner from '../partners/Partner'
+import PopCourse from './popCourse/PopCourse'
+import Partner from './partners/Partner'
 const Home = () => {
   return (
     <>
@@ -29,7 +31,19 @@ const Home = () => {
 
     {/* about section starting */}
       <About />
-    {/* about section starting */}
+    {/* about section ending */}
+
+    {/* partners section starting */}
+    {/* <Partner /> */}
+    {/* partners section ending */}
+
+    {/* course section starting */}
+    <PopCourse />
+    {/* course section ending */}
+
+    {/* partners section starting */}
+    <Partner />
+    {/* partners section ending */}
     </>
   )
 }

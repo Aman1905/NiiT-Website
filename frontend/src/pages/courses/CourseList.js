@@ -16,6 +16,7 @@ const CourseList = [
         img: "../images/python.png",
         title: "Basic Python Programming",
         desc: "Complete beginner level Python Programming",
+        dest: `./python`
     },
     {
         id: 4, 

@@ -1,7 +1,7 @@
 const CourseList = [
     {
         id: 1, 
-        img: "../images/java.png",
+        img: "../images/Java.png",
         title: "Java Programming",
         desc: "Complete Data Structures and Algorithms, and other Java concepts",
     },

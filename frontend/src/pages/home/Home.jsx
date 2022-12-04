@@ -3,9 +3,9 @@ import './Home.css'
 import home from '../../assets/home.png'
 import { NavLink } from 'react-router-dom'
 import About from './about/About'
-// import Partner from '../partners/Partner'
-import PopCourse from './popCourse/PopCourse'
-import Partner from './partners/Partner'
+// import PopCourse from './popCourse/PopCourse'
+import Client from './clients/Client'
+
 const Home = () => {
   return (
     <>
@@ -33,21 +33,15 @@ const Home = () => {
       <About />
     {/* about section ending */}
 
-    {/* partners section starting */}
-    {/* <Partner /> */}
-    {/* partners section ending */}
-
     {/* course section starting */}
-    <PopCourse />
+    {/* <PopCourse /> */}
     {/* course section ending */}
 
-    {/* partners section starting */}
-    <Partner />
-    {/* partners section ending */}
+    {/* clients section starting */}
+    <Client />
+    {/* clients section ending */}
     </>
   )
 }
 
 export default Home
-
-// //section-heading

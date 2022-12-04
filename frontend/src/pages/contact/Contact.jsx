@@ -1,12 +1,24 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [emailID, setEmailID] = useState('');
+  const [mobNum, setMobNum] = useState('');
+  const [myMessage, setMyMessage] = useState('');
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    setFirstName('');
+    setLastName('');
+    setEmailID('');
+    setMobNum('');
+    setMyMessage('');
 
     emailjs.sendForm('service_g414zzo', 'template_5wk620c', form.current, 'I5CFkbgSfyjWJU2G9')
       .then((result) => {
@@ -33,27 +45,27 @@ const Contact = () => {
                 <div className="row50">
                   <div className='inputBox'>
                     <span>First Name</span>
-                    <input type="text" placeholder="Aman" name="user_name" />
+                    <input type="text" placeholder="Aman" name="user_name" onChange={e => setFirstName(e.target.value)} value={firstName} />
                   </div>
                   <div className='inputBox'>
                     <span>Last Name</span>
-                    <input type="text" placeholder="Chopra" name="user_surname" />
+                    <input type="text" placeholder="Chopra" name="user_surname" onChange={e => setLastName(e.target.value)} value={lastName} />
                   </div>
                 </div>
                 <div className='row50'>
                   <div className='inputBox'>
                     <span>Email Address</span>
-                    <input type="text" placeholder="amanchopra@gmail.com" name='user_email' />
+                    <input type="text" placeholder="amanchopra@gmail.com" name='user_email' onChange={e => setEmailID(e.target.value)} value={emailID} />
                   </div>
                   <div className='inputBox'>
                     <span>Mobile</span>
-                    <input type="text" placeholder="+91 9876543210" name="user_phone"/>
+                    <input type="text" placeholder="+91 9876543210" name="user_phone" onChange={e => setMobNum(e.target.value)} value={mobNum}/>
                   </div>
                 </div>
                 <div className='row100'>
                   <div className='inputBox'>
                     <span>Message</span>
-                    <textarea placeholder="Write your message here..." name='message'></textarea>
+                    <textarea placeholder="Write your message here..." name='message' onChange={e => setMyMessage(e.target.value)} value={myMessage}></textarea>
                   </div>
                 </div>
                 <div className='row100'>
